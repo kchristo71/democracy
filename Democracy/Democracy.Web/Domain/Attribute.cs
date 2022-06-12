@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Democracy.Domain
+namespace Democracy.Web.Domain
 {
     public class Attribute
     {

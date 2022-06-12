@@ -1,4 +1,4 @@
-﻿namespace Democracy.Domain
+﻿namespace Democracy.Web.Domain
 {
     public enum QuestionType
     {

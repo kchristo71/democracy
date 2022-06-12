@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Democracy.Domain
+namespace Democracy.Web.Domain
 {
-    public abstract class AttributeValue
+    public class AttributeValue
     {
         [Key]
+        public Guid Id { get; set; }
         public Attribute Attribute { get; set; }
-        [Key]
         public string Value { get; set; }
     }
 }

@@ -1,11 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Democracy.Web.Domain;
+using Microsoft.EntityFrameworkCore;
 
-namespace Democracy.Domain
+namespace Democracy.Web.Data
 {
-    public class PollContext: DbContext
+    public class PollsContext: DbContext
     {
+        public PollsContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
+        {
+        }
+
         public DbSet<AttributeCategory> AttributeCategories { get; set; }
-        public DbSet<Attribute> Attributes { get; set; }
+        public DbSet<Domain.Attribute> Attributes { get; set; }
         public DbSet<PollAttributeValue> PollAttributeValues { get; set; }
         public DbSet<PollCategory> PollCategories { get; set; }
         public DbSet<PollType> PollTypes { get; set; }

@@ -1,12 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Democracy.Domain
+namespace Democracy.Web.Domain
 {
-    public class PollCategory
+    public class PollType
     {
         [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
         public string Name { get; set; }
-        public string? Description { get; set;}
     }
 }
